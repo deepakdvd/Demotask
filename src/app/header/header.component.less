@@ -1,0 +1,232 @@
+a{
+  color: black;
+}
+.form-control {
+  border-radius: 0px;
+  height: 50px;
+  background: #EFEFEF;
+  border-color: white;
+  /*letter-spacing: 0.0625em;*/
+}
+
+.style-1::-webkit-scrollbar-track{
+  -webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.3);
+  border-radius:5px;
+  background-color:#fff
+  }
+.style-1::-webkit-scrollbar{
+  width:8px;
+  background-color:#00c389;
+  }
+.style-1::-webkit-scrollbar-thumb{
+  border-radius:5px;
+  -webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.3);
+  background-color:#00c389;
+}
+nav{
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.22);
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(0,128,0);
+}
+.control-label{
+  font-size: 20px;
+}
+.navbar-toggle .icon-bar{
+  background-color: black;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: transparent;
+}
+ .navbar{
+  	margin-bottom: 0px;min-height: 30px;
+  }
+  .navbar a{
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+  font-size: 35px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+ .navbar-brand {
+  padding: 30px;
+  font-size: 35px;
+
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: 20vw;
+}
+.example3 .navbar-brand {
+  height: 80px;
+  font-size: 35px;
+}
+
+.example3 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.example3 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+ul.nav a:hover { background-color: transparent !important; }
+
+a.effect-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+.comp-name {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 50px;
+  color: #00c389;
+  font-family: 'Quicksand', sans-serif;
+  width: 100vw;
+}
+
+
+.letterDrop {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase; 
+  letter-spacing: 0.5em;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+  text-align: center;
+}
+
+@keyframes letterDrop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+  
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+    
+        transform: rotateX(360deg);
+    }
+}
+
+
+span:nth-child(2n) {
+  color: black;
+}
+
+@media screen and (max-width: 767px) { 
+  .comp-name{
+    font-size: 29px;
+  }
+
+  .example3 .navbar-brand {
+    height: 65px;
+    padding: 21px;
+  }
+
+  .example3 .navbar-toggle {
+    margin: 15px 15px 15px 0;
+  }
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+      position: relative;
+      top: 6%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+  }
+  
+  .overlay a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 30px;
+      color: black;
+      display: block;
+      transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+      position: absolute;
+      right: 25px;
+      top: -25px;
+      font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
